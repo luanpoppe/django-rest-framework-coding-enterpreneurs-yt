@@ -50,7 +50,7 @@ class ProductMixinView(mixins.ListModelMixin, mixins.RetrieveModelMixin, mixins.
     lookup_field = 'pk'
 
     def get(self, request, *args, **kwargs):
-        print(args, kwargs)
+        # print(args, kwargs)
         pk = kwargs.get('pk')
         if pk is not None:
             return self.retrieve(request, *args, **kwargs)
