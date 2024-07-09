@@ -1,6 +1,8 @@
 import requests
 from getpass import getpass
 
+print("hueheu")
+
 auth_endpoint = "http://localhost:8000/api/auth/"
 username = input("What is your username?\n")
 password = getpass("What is your password?\n")
